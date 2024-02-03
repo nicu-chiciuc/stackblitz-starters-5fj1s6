@@ -7,5 +7,10 @@
   },
   "dependencies": {
     "@robolex/sure": "^0.8.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
   }
 }

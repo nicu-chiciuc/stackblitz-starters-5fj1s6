@@ -1,3 +1,9 @@
-# stackblitz-starters-5fj1s6
+```sh
+npm install
+```
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/nicu-chiciuc/stackblitz-starters-5fj1s6)
+```sh
+node index.js
+
+> { age: 'age must be a positive number' }
+```

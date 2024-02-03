@@ -10,17 +10,10 @@ const schema = object({
       return /** @type {const} */ ([false, "age must be a number"]);
     }
 
-    if (!Number.isInteger(val)) {
-      // Or the `bad` function, since it's typed automatically, and takes
-      return bad("age must be an integer");
-    }
-
-    if (val < 0) {
-      return /** @type {const} */ ([false, "age must be a positive number"]);
-    }
-
-    if (val > 150) {
-      return bad("age must be less than 150");
+    if (!Number.isInteger(val) || val < 0 || val > 150) {
+      // Or the `bad` function, since
+      // it's typed automatically, and takes less to write
+      return bad("not valid age");
     }
 
     // Or you can use `[true, val] as const`
